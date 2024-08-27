@@ -7,4 +7,78 @@ body {
   background-color: #f0f0f0;
   font-family: sans-serif;
   color: black;
+  max-width: 1344px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  max-width: 1344px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+}
+
+#logo img {
+  display: inline-block;
+  width: 220px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  position: relative;
+}
+
+.link-list {
+  display: flex;
+}
+
+.link-list a {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: none;
+  color: red;
+  margin-right: 20px;
+  transition: all ease-in-out 300ms;
+}
+
+.link-list a:hover {
+  color: blue;
+}
+
+#sidebar-ctrl {
+  display: none;
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 730px) {
+  header {
+    background-color: aquamarine;
+  }
+
+  #logo img {
+    width: 120px;
+    height: auto;
+  }
+
+  .open-menu {
+    display: inline-block;
+  }
+
+  .link-list {
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 65px 35px;
+    display: none;
+  }
 }
