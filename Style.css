@@ -232,8 +232,39 @@ nav {
 
 .third-setion {
   background-color: var(--secandoryclr);
+  display: flex;
 }
 
+.clmns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  color: var(--white);
+  text-align: center;
+  padding: 8px 70px;
+  gap: 15px;
+  max-width: 33.3%;
+}
+.clmn-icon {
+  width: 80px;
+  height: auto;
+}
+
+.clmns h3 {
+  font-size: clamp(24px, 3vw, 38px);
+  font-weight: 600;
+}
+
+.clmns h4 {
+  font-size: clamp(18px, 3vw, 23px);
+  font-weight: 500;
+}
+
+#middlecl {
+  background-color: #41286a;
+}
 /*  */
 @media only screen and (max-width: 730px) {
   header {
