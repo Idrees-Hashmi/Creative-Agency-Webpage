@@ -7,12 +7,12 @@
 
 :root {
   --primeclr: #f42267;
-  --secandoryclr: #6766c2;
+  --secandoryclr: #4a2d7f;
   --white: #ffffff;
   --blacko: #0b0b0b;
   --sectionbg: #f1f1f1;
-  --primeshadow: #ff5990;
-  --secshadow: #a57ee9;
+  --primeshadow: #fe5991;
+  --secshadow: #a47fe9;
 }
 
 body {
@@ -26,6 +26,15 @@ body {
 span {
   font-family: "Spectral", serif;
   font-style: italic;
+  font-size: 26px;
+}
+
+h1 {
+  font-size: clamp(36px, 30vw, 46px);
+}
+
+h2 {
+  font-size: clamp(30px, 30vw, 40px);
 }
 
 button {
@@ -36,6 +45,12 @@ button {
   color: var(--white);
   font-size: clamp(16px, 3vw, 18px);
   box-shadow: 0px 8px var(--primeshadow);
+  transition: all ease-out 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 button:active {
@@ -121,8 +136,8 @@ nav {
   z-index: 5;
   color: var(--white);
   gap: 25px;
-  width: 50%;
-  padding: 13rem 8rem 12rem 8rem;
+  width: 60%;
+  padding: 12rem 0rem 12rem 8rem;
   /* align-items: center; */
 }
 
@@ -144,12 +159,79 @@ nav {
   max-width: 550px;
   height: auto;
   justify-self: end;
-  padding: 10rem 18rem 0rem 0rem;
+  padding: 10rem 15rem 0rem 0rem;
   opacity: 0.9;
   /* padding-right: 30px; */
   /* position: absolute;
   bottom: 0;
   right: 100px; */
+}
+
+/* Second Containor */
+.sec-section {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  max-height: 662px;
+  background: url("SRC Images/sec-section-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0rem 8rem;
+}
+
+/* content Section */
+
+.sec-section .content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: baseline;
+  gap: 25px;
+}
+
+.sec-section button {
+  display: inline;
+}
+
+.content li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 25px;
+  font-weight: 500;
+  transition: all ease-out 0.3s;
+}
+
+/* .content li:last-child {
+  background-color: var(--primeclr);
+  padding: 12px 25px;
+  border-radius: 50px;
+  color: var(--white);
+} */
+
+.content li:hover {
+  background-color: var(--primeclr);
+  padding: 12px 25px;
+  border-radius: 50px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* section 2 Image */
+
+.sec-section img {
+  justify-self: end;
+  width: auto;
+  height: 450px;
+  padding-right: 130px;
+  padding-top: 3rem;
+}
+
+/* 3rd Section */
+
+.third-setion {
+  background-color: var(--secandoryclr);
 }
 
 /*  */
