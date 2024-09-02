@@ -265,6 +265,68 @@ nav {
 #middlecl {
   background-color: #41286a;
 }
+
+/* 4th Section */
+.forth-section {
+  position: relative;
+  display: flex;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #6766c2;s */
+}
+
+.forth-section .content {
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 60px 10px;
+  gap: 10px;
+  max-width: 65%;
+  color: var(--white);
+}
+
+.forth-section .content p {
+  max-width: 75%;
+  padding-top: 15px;
+}
+
+.forth-section::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("SRC Images/Layer-23.-BGjpg.jpg");
+  opacity: 0.6;
+  mix-blend-mode: multiply;
+}
+
+.forth-section::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6766c2;
+}
+
+/* 5th Section */
+
+.fifht-section {
+  display: flex;
+  padding: 0 8rem;
+}
+
+.icon-box img {
+  fill: #0b0b0b;
+}
 /*  */
 @media only screen and (max-width: 730px) {
   header {
